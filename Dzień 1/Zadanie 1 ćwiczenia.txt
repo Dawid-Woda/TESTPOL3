@@ -1,0 +1,64 @@
+W IntelliJ stwórz pustą klasę o nazwie "Test"
+
+
+Uzupełnij klasę tak, by zwracała tekst "Witaj, <Twoje imię>"
+
+public class Test {
+  public static void main(String[] args) {
+    
+    
+  }
+}
+
+Użyj komentarzy aby poniższy kod zwracał jedynie kekst
+Hello Java!
+You were born in 1995
+You were created by James Gosling
+Użyj wielolinijkowych komentarzy tak gdzie jest to wymagane!
+
+public class Test {
+  public static void main(String[] args) {
+    System.out.println("Hello Java!");
+    
+    System.out.println("You were born in 1995");
+
+    Sun Microsystems announced the release of Java in 1995
+    
+    System.out.println("You were created by James Gosling");
+    
+		James Gosling is a Canadian engineer who 
+		created Java while working at Sun Microsystems. 
+		His favorite number is the square root of 2!
+    
+    System.out.println("You are a fun language!");
+  }
+} 
+
+Przerób kod tak aby był bardziej czytelny!
+Dodaj linię kodu, która zwróci tekst "Programowanie jest na razie dla mnie..."
+public class Test {
+  public static void main(String[] args) {
+    // Press enter or return on your keyboard after each semicolon!
+    
+    System.out.println("Java is a class-based language.");System.out.println("Java classes have a 'main' method.");System.out.println("Java statements end with a semicolon.");
+  }
+}
+
+Popraw błąd uniemożliwiający komoilację poniższego kodu:
+public class Test {
+  public static void main(String[] args) {
+    
+    System.out.println("Java is a class-based language.");
+    System.out.println("Java classes have a 'main' method.");
+    System.out.println("Java statements end with a semicolon.")
+
+    System.out.println("Programming is... fun!");
+    
+  }
+}
+
+Stwórz od podstaw publiczną kalsę o nazwie "Test"
+Dodaj w jej wnętrzu metodę main (public static void main)
+Wewnątrz metody main powinny znaleźć się dwie rzeczy:
+1. Jednolinijkowy komentarz o treści "Metoda main wykonuje kod klasy"
+2. Metoda powinna zwracać tekst "Mój pierwszy kod w Javie napisany od zera!"
