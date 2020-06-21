@@ -10,6 +10,7 @@ public class Test {
   }
 }
 
+-----------------------------------------------------------
 Użyj komentarzy aby poniższy kod zwracał jedynie kekst
 Hello Java!
 You were born in 1995
@@ -34,6 +35,7 @@ public class Test {
   }
 } 
 
+-------------------------------------------------------------
 Przerób kod tak aby był bardziej czytelny!
 Dodaj linię kodu, która zwróci tekst "Programowanie jest na razie dla mnie..."
 public class Test {
@@ -44,6 +46,7 @@ public class Test {
   }
 }
 
+--------------------------------------------------------------
 Popraw błąd uniemożliwiający komoilację poniższego kodu:
 public class Test {
   public static void main(String[] args) {
@@ -57,6 +60,7 @@ public class Test {
   }
 }
 
+----------------------------------------------------------------
 Stwórz od podstaw publiczną kalsę o nazwie "Test"
 Dodaj w jej wnętrzu metodę main (public static void main)
 Wewnątrz metody main powinny znaleźć się dwie rzeczy:
