@@ -1,0 +1,125 @@
+W podanym poniżej przykładzie zwróć zmienną której działanie da wynik 2
+
+public class Test {
+	public static void main(String[] args) {   
+		int dzialanie1 = 8 + 6;
+		int dzialanie2 = 8 - 6;
+	}
+}
+
+---------------------------------------------------------------------------
+W podanym poniżej przykładzie utwórz zmienną "animalsInZoo" będącą sumą dwóch pierwszych zmiennych oraz zwróć jej wartość
+Poniżej stwórz zmienną "numZebrasAfterTrade" w której znajdzie się przypadek oddania 2 zebr do innego zoo oraz zwróć wartość tej zmiennej
+
+public class Test {
+	public static void main(String[] args) {   
+		int zebrasInZoo = 8;
+		int giraffesInZoo = 4;
+	}
+}
+
+-----------------------------------------------------------------------
+W podanym poniżej przykładzie rachunku w restauracji utwórz zmienną typu double "total" będącą sumą zmiennej "subtotal" oraz mnożenia "subtotal" i "tax"
+W restauracji były 4 osoby- utwórz zmienną "perPerson" będącą wynikiem dzielenia "total" prze ilość osób
+Zwróć obie zmienne
+
+public class Test {
+	public static void main(String[] args) {   
+		double subtotal = 30;
+		double tax = 0.0875;
+		double total = subtotal + subtotal * tax;
+		System.out.println(total);
+		double perPerson = total / 4;
+		System.out.println(perPerson);
+	}
+}
+
+--------------------------------------------------------------------
+W poniższym przykładzie utwórz zmienną "leftOut" będącą resztą (modulo) z dzielenia ilości studentów przez 3
+Zwróć zmienną "leftOut"
+
+
+public class Test {
+	public static void main(String[] args) {   
+		int students = 26;
+	}
+}
+
+------------------------------------------------------------------
+W poniższym przykładzie zwróć wynik dla "creditsEarned" większe od "creditsToGraduate" (nie musisz do tego tworzyć nowej zmiennej)
+Stwórz zmienną "creditsAfterSeminar" będącą sumą "creditsEarned" oraz "creditsOfSeminar"
+Zwróć wynik dla "creditsToGraduate" mniejsze od "creditsAfterSeminar"
+
+public class Test {
+	public static void main(String[] args) {   
+		double creditsEarned = 176.5;
+		double creditsOfSeminar = 8;
+		double creditsToGraduate = 180;
+	}
+}
+
+--------------------------------------------------------------
+Stwórz zmienną typu boolean "sameNumberOfSongs" porównującą czy "songsA" i "songsB" są identyczne
+Stwórz zmienną typu boolean "differentLength" porównującą czy "albumLengthA" i "albumLengthB" są różne
+Zwróć zmienne
+
+public class Test {
+	public static void main(String[] args) {   
+		int songsA = 9;
+		int songsB = 9;
+		int albumLengthA = 41;
+		int albumLengthB = 53;
+
+	}
+}
+
+-------------------------------------------------------------
+Stwórz zmienną "totalRecommendedAmount" będącą mnożeniem "recommendedWaterIntake" i "daysInChallenge"
+Stwórz zmienną "isChallengeComplete" sprawdzającą czy "yourWaterIntake" jest większy bądź równy od "totalRecommendedAmount"
+Zwróć zmienną "totalRecommendedAmount"
+
+public class Test {
+  	public static void main(String[] args){
+      double recommendedWaterIntake = 8;
+      double daysInChallenge = 30;
+      double yourWaterIntake = 235.5;
+
+    }       
+}
+
+---------------------------------------------------------------
+Za pomocą metody .equals() porównaj i zwróć czy line1 i line 2 są równe oraz czy line2 i line3 są równe. Nie musisz tworzyć nowych zmiennych
+
+public class Test {
+  	public static void main(String[] args){
+      String line1 = "Nah nah nah nah nah nah nah nah nah yeah";
+      String line2 = "Nah nah nah nah nah nah, nah nah nah, hey Jude";
+      String line3 = "Nah nah nah nah nah nah, nah nah nah, hey Jude";
+    }       
+}
+
+-------------------------------------------------------------
+Stwórz zmienną typu String "zooDescription" przyjmującą treść "Our zoo has <animals> <species>s!"- pamiętaj o dodaniu spacji
+Zwróć stworzoną zmienną
+
+public class Test {
+  	public static void main(String[] args){
+      int animals = 12;
+      String species = "zebra";
+      String zooDescription = "Our zoo has " + animals + " " +species + "s!";
+      System.out.println(zooDescription);
+    }       
+}
+
+------------------------------------------------------------
+Na koncie bankowym chcesz wypłacić część pieniędzy a resztę rozdać. Stwórz zmienną "updatedBalance" będącą odejmowaniem "balance" oraz "amountToWithdraw"
+Stwórz zmienną "amountForEachFriend" będącą dzieleniem "updatedBalance" przez 3
+Stwórz zmienną "canPurchaseTicket" sprawdzającą czy "amountForEachFriend" jest większe bądź równe 250 i zwróć ją.
+Wypisz tekst "I gave each friend <amountForEachFriend>..." używając dodawaie Stringów
+
+public class Test {
+  	public static void main(String[] args){
+      double balance = 1000.75;
+      double amountToWithdraw = 250;
+    } 
+}
