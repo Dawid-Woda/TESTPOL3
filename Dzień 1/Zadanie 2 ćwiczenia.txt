@@ -1,0 +1,109 @@
+Za pomocą metody System.out.println zwróć oba agrumenty
+
+public class Test {
+	public static void main(String[] args) {
+		String name = "James Gosling";
+		int yearCreated = 1995;
+	}
+}
+
+--------------------------------------------------
+Zadeklaruj zmienną o typie int o nazwie "numComments" o dowolnej liczbie
+Zwróc zmienną "numComments" w konsoli
+
+//This is the class declaration
+public class Test {
+  //This is the main method that runs when you compile
+	public static void main(String[] args) {
+		//This is where you will define your variable
+    
+		//This is where you will print your variable
+    
+	}
+  
+  //This is the end of the class
+}
+
+//This is outside the class
+
+-------------------------------------------
+Zadeklaruj zmienną o typie double o nazwie "procent" i nadaj jej wartość z jednym miejscem po przecinku
+Zwróc zmienną "procent" w konsoli
+
+public class Test {
+	public static void main(String[] args) {
+    
+	}
+}
+
+-------------------------------------------
+Stwórz zmienną typu boolean o nazwie "intsCanHoldDecimals" i nadaj jej wartość (true/false) z zależności od odpowiedzi na pytanie:
+Czy zmienna typu int może zawierać wartości zmiennoprzecinkowe?
+Zwróc zmienną "intsCanHoldDecimals"
+
+public class Test {
+	public static void main(String[] args) {   
+    
+	}
+}
+
+-----------------------------------------------
+Stwórz zmienną typu char o nazwie "expectedGrade" i nadaj jej wartość w zachodnim systemie ocen (A-F)
+Zwróc zmienną "expectedGrade"
+
+public class Test {
+	public static void main(String[] args) {   
+    
+	}
+} 
+
+-----------------------------------------------
+Stwórz zmienną w typie String o nazwie "openingLyrics" przyjmującą wartość pierwszych słów Twojej ulubionej piosenki
+Zwróć zmienną "openingLyrics"
+
+public class Test {
+	public static void main(String[] args) {   
+    
+	}
+}
+
+------------------------------------------------
+Za pomocą komendy Rub spróbuj wykonać poniższy kod:
+
+public class Test {
+	public static void main(String[] args) {   
+		String year = 2001;
+		double title = "Shrek";
+		int genre = 'C';
+		boolean runtime = 1.58;
+		char isPG = true;
+	}
+}
+
+Zamień typy zmiennych na odpowiednie tak aby kod mógł zostać wykonany.
+
+--------------------------------------------------
+Zmienne podane w poniższym kodzie są mało zrozumiałe. Dodatkowo niektóre powodują błędy kompilacji:
+
+public class Test {
+	public static void main(String[] args) {   
+		String 1stName = "Samira";
+		String blah = "Smith";
+		String .com = "samira@google.com";
+		int salaryexpectation = 100000;
+		int year_of_birth = 1955;
+    
+		System.out.println("The program runs!");
+	}
+}
+
+Zamień nazwy zmiennych na bardziej zrozumiałe oraz usuń błędy w kompilacji.
+
+--------------------------------------------------
+Zadeklaruj zmienne "name", "age", "desiredSalary", "gender" oraz "lookingForJob" nadając każdej inny odpowiedni dla niej typ
+
+public class Test {
+	public static void main(String[] args) {   
+    
+	}
+}
