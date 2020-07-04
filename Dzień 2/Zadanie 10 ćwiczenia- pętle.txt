@@ -1,0 +1,159 @@
+Stwórzmy generator rzutu kostką. 
+W wynaczonym miejscu powtórzmy rzut jeśli wynik "dieRoll" będzie inny niż 5 (syntax while (warunek) {kodDoWykonania})
+Stworzyliśmy teraz pętlę nieskończoną- nie ma warunku wyjściowego. Skopiujmy więc linijkę generacji losowego numeru (bez int) i wklejmy w naszą pętlę.
+Nad linią ponownej genercji losowego numeru wypisz wartość "dieRoll"
+
+
+// Importing the Random library
+import java.util.Random;
+
+class LuckyFive {
+  
+  public static void main(String[] args) {
+    
+    // Creating a random number generator
+    Random randomGenerator = new Random();
+    
+    // Generate a number between 1 and 6
+    int dieRoll = randomGenerator.nextInt(6) + 1;
+
+    // Repeat while roll isn't 5
+    
+    
+  }
+  
+}
+
+
+
+------------------------------------------------------------
+W zaznaczonym miejscu zainicjuj zmienną typu int "cupsOfCoffee" o wartości 1.
+Poniżej zainicjujmy pętlę która będzie działać jeśli "cupsOfCoffee" będzie mniejsze lub równe 100.
+Wewnatrz pętli inkrementujmy naszą zmienną o 1 (syntax nazwaZmiennej++;)
+Wypisz w linijce ponad inkrementacją tekst "Fry drinks cup of coffee #<wartośćZmiennej>"
+
+
+class Coffee {
+  
+  public static void main(String[] args) {
+    
+    // initialize cupsOfCoffee
+
+    // add while loop with counter
+
+    }
+        
+    
+  }
+  
+}
+
+
+--------------------------------------------------------------------------------
+Dla ułatwienia ustawiania warunków i inkrementacji często używa się pętli for łaczącej w sobie:
+1. Inicjlizację zmiennej
+2. Nadanie warunku powtarzalnośi
+3. Inkrementację
+Przykładowy suntax to:
+for (int i = 1, i < 5, i++)
+
+Zróbmy więc pierwsze przepisanie (refactor) kodu. Zmień pętlę z poprzedniego zadania na zmienną typu for
+
+class Coffee {
+  
+  public static void main(String[] args) {
+    
+    int cupsOfCoffee = 1;
+    
+    while (cupsOfCoffee <= 100) {
+      
+      System.out.println("Fry drinks cup of coffee #" + cupsOfCoffee);
+      cupsOfCoffee++;
+      
+    }
+    
+  }
+  
+}
+
+
+---------------------------------------------------------------------------
+W poniśzym kodzie przeiteruj poprzez tablicę "expenses" za pomocą pętli for 
+Syntax- zmienna typu integer i równa 0, i mniejsze od nazwaZmiennej.size(), inkrementacja i
+Wewnątrz zmiennej sumuj wynik kolejnych elementów listy do zmiennej sumy "total"
+Syntax- zmiennaSumy równa zmiennaSumy plus zmiennaTablicy(i)
+
+import java.util.ArrayList;
+
+class CalculateTotal {
+  
+  public static void main(String[] args) {
+    
+    ArrayList<Double> expenses = new ArrayList<Double>();
+    expenses.add(74.46);
+    expenses.add(63.99);
+    expenses.add(10.57);
+    expenses.add(81.37);
+    
+    double total = 0;
+    
+    // Iterate over expenses
+
+    
+    System.out.println(total);
+    
+  }
+  
+}
+
+
+
+------------------------------------------------------------------------------
+Pętla For-each jest w stanie przeiterować się przez całą listę dzięki syntaxowi for (typNowejZmiennej nazwaNowejZmiennej : nazwaZmiennejTabeli){}  
+Przeiteruj tabelę "expenses" za pomocą nowej zmiennej "expense" o typie double
+Wewnątrz naszej iteracji chcielibyśmy sprawdzić która wartość jest największa- w tym celu użyjemy pętli if o syntaxie: if (warunek){}
+Naszym warunkiem będzie: jeśli zmienna "expense" jest większa od zmiennej "mostExpensive" wtedy przyrównaj (podmień) "mostExpensive" do "expense"
+
+import java.util.ArrayList;
+
+class MostExpensive {
+  
+  public static void main(String[] args) {
+    
+    ArrayList<Double> expenses = new ArrayList<Double>();
+    expenses.add(74.46);
+    expenses.add(63.99);
+    expenses.add(10.57);
+    expenses.add(81.37);
+    
+    double mostExpensive = 0;
+    
+    // Iterate over expenses
+
+    
+    System.out.println(mostExpensive);
+    
+  }
+  
+}
+
+
+------------------------------------------------------------------------------
+W ramach ćwiczeń przeanalizuj poniższy kod i zastanów się czy rozumiesz każdą jego część.
+Postaraj się zmienić zmienną tak aby zamiast inkrementować dekrementowała warunek (i--)
+
+
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+class Playground {
+
+	public static void main(String[] args) {
+  
+    for (int i = 0; i < 28; i++) {
+  		System.out.println("Congrats on finishing Java loops!");
+	  }
+  }
+
+}
