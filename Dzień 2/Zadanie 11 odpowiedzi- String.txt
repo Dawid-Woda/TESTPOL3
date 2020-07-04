@@ -1,0 +1,110 @@
+public class TweetCounter {
+  
+	public static void main(String[] args) {
+    
+    String tweet = "Liz Lemon, ninjas are kind of cool... I just dont know any personally. Get on that.";  
+
+    // What's the character count?
+    System.out.println(tweet.length());
+    
+  }
+  
+}
+
+
+---------------------------------------------------------
+public class CombineNames {
+  
+	public static void main(String[] args) {
+    
+    // Add your first names:
+    String firstName = "Dawid ";  
+    String lastName = "Woda";
+
+    // What's the full name?
+    System.out.println(firstName.concat(lastName));
+    
+  }
+  
+}
+
+
+--------------------------------------------------------
+public class Password {
+  
+  public static void main(String[] args) {
+    
+    String password = "correcthorsebatterystaple";
+    
+    // Write the code:
+    System.out.println(password.equals("correcthorsebatterystaple"));
+    System.out.println(password.equals("othertext"));
+    
+  }
+  
+}
+
+
+--------------------------------------------------------
+public class MorseCode {
+  
+  public static void main(String[] args) {
+    
+    String code = ".... .. / .. .----. -- / ... --- -. -. -.-- / .- -. -.. / .. / .-.. .. -.- . / - --- / . .- - / .-. .- -- . -.";
+
+    // Write the code:
+    System.out.println(code.indexOf(". .- -"));
+    
+  }
+  
+}
+
+
+----------------------------------------------------------
+public class Initials {
+  
+	public static void main(String[] args) {
+    
+    // Add a first name and a last name:
+    String firstName = "Dawid";  
+    String lastName = "Woda";
+    
+    // What are the initials?
+    System.out.println(firstName.charAt(0));
+    System.out.println(lastName.charAt(0));
+    
+  }
+  
+}
+
+
+-------------------------------------------------------------
+public class Poetry {
+  
+	public static void main(String[] args) {
+      
+    String line = "The Heav'ns and all the Constellations rung";     
+    // Change the arguments:
+    System.out.println(line.substring(4, 11));
+    
+  }
+  
+}
+
+
+-------------------------------------------------------------
+public class Hashtag {
+  
+  public static void main(String[] args) {
+    
+    String hashtag = "#100DaysOfCode";
+    
+    // Make the hashtag lowercase:
+    System.out.println(hashtag.toLowerCase());
+    
+  }
+  
+}
+
+
+-----------------------------------------------------------------

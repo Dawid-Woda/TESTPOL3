@@ -1,0 +1,203 @@
+W tym ćwiczeniu popracujemy na warunkach.
+
+Pierwszym jest warunek if-then
+
+Przykładowo:
+int numberOfItemsInCart = 9;
+
+if (numberOfItemsInCart > 12) {
+
+  System.out.println("Express checkout not available");
+
+}
+
+Warunek ten sprawdza warunek i wykonuje kod jeśli on zachodzi- w przeciwnym wypadku nie robi nic.
+
+
+------------------------------------------------------------------------------------------------------
+Stwórz warunek if-then wypisujący tekst "High value item!" jeśli wartość "itemCost" jest wyższa niż 24.00
+
+public class Order {
+  
+  public static void main(String[] args) {
+    
+    double itemCost = 30.99;
+    
+    // Write an if-then statement:
+
+}
+    
+  }
+  
+}
+
+------------------------------------------------------------------------------------------------------------
+Kolejny typ to if-then-else który obsługuje wystąpienie i niewystąpienie warunku logicznego. Przykładowo:
+
+if (hasPrerequisite) {
+
+  // Enroll in course
+
+} else {
+
+  // Enroll in prerequisite
+
+}
+
+-----------------------------------------------------------------------------------------------------------------
+Stwórz warunek if-then-else który wypisuje "Shipping" jeśli zmienna isFilled jest równa true oraz "Order not ready" jeśli równa jest false.
+
+
+public class Order {
+  
+  public static void main(String[] args) {
+    
+    boolean isFilled = false;
+    
+    // Write an if-then-else statement:
+    
+    
+  }
+  
+}
+
+----------------------------------------------------------------------------------------------------------------------
+Kolejny typ to if-then-else-if obsługujący wiele przypadków logicznych połączonych ze sobą:
+
+String course = "Theatre";
+
+if (course.equals("Biology")) {
+
+  // Enroll in Biology course
+
+} else if (course.equals("Algebra")) {
+
+  // Enroll in Algebra course
+
+} else if (course.equals("Theatre")) {
+
+  // Enroll in Theatre course
+
+} else {
+
+  System.out.println("Course not found!");
+
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+W zaznaczonym miejscu w kodzie stwórz warunek if-then-else-if o następujących założeniach:
+Jeśli "shipping" jest równy "Regular" zwróć 0
+Jeśli "shipping" jest równy "Express" zwróć 1.75
+W przeciwnym wypadku zwróć .50
+Pamiętaj o użyciu wyrażenia .equals()
+
+
+public class Order {
+  boolean isFilled;
+  double billAmount;
+  String shipping;
+  
+  public Order(boolean filled, double cost, String shippingMethod) {
+		if (cost > 24.00) {
+      System.out.println("High value item!");
+    }
+    isFilled = filled;
+    billAmount = cost;
+    shipping = shippingMethod;
+  }
+  
+  public void ship() {
+    if (isFilled) {
+      System.out.println("Shipping");
+      System.out.println("Shipping cost: " + calculateShipping());
+    } else {
+      System.out.println("Order not ready");
+    }
+  }
+  
+  public double calculateShipping() {
+	 	// declare conditional statement here
+ 	}
+  
+  public static void main(String[] args) {
+    // do not alter the main method!
+    Order book = new Order(true, 9.99, "Express");
+    Order chemistrySet = new Order(false, 72.50, "Regular");
+    
+    book.ship();
+    chemistrySet.ship();
+  }
+}
+
+
+--------------------------------------------------------------------------------------------------
+Kolejnym typem jest switch który sprawdza warunki i wykonuje kod tylko pasującego bloku. Przykładowo:
+String course = "History";
+
+switch (course) {
+  case "Algebra": 
+    // Enroll in Algebra
+    break; 
+  case "Biology": 
+    // Enroll in Biology
+    break;
+  case "History": 
+    // Enroll in History
+    break;
+  case "Theatre":
+    // Enroll in Theatre
+    break;
+  default:
+    System.out.println("Course not found");
+}
+
+-----------------------------------------------------------------
+Za pomocą warunku switch stwórz w metodzie "calculateShipping" warunek o takich samych parametrach jak w poprzednim ćwiczeniu
+Pamiętaj o przyrównywaniu do wartości wewnątrz każdego case.
+
+
+public class Order {
+  boolean isFilled;
+  double billAmount;
+  String shipping;
+  
+  public Order(boolean filled, double cost, String shippingMethod) {
+		if (cost > 24.00) {
+      System.out.println("High value item!");
+    }
+    isFilled = filled;
+    billAmount = cost;
+    shipping = shippingMethod;
+  }
+  
+  public void ship() {
+    if (isFilled) {
+      System.out.println("Shipping");
+      System.out.println("Shipping cost: " + calculateShipping());
+    } else {
+      System.out.println("Order not ready");
+    }
+  }
+  
+  public double calculateShipping() {
+    double shippingCost;
+	 	// declare switch statement here
+
+    
+    return shippingCost;
+ 	}
+  
+  public static void main(String[] args) {
+    // do not alter the main method!
+    Order book = new Order(true, 9.99, "Express");
+    Order chemistrySet = new Order(false, 72.50, "Regular");
+    
+    book.ship();
+    chemistrySet.ship();
+  }
+}
+
+
+----------------------------------------------------------------------------
+
+
