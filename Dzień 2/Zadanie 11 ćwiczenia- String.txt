@@ -1,0 +1,151 @@
+Przenalizuj poniższy kod. Czy potrafisz określić co się stanie przed jego uruchomieniem?
+
+public class HelloWorld {
+  
+	public static void main(String[] args) {
+    
+    String str = "Hello, World!";
+    
+    // Examples:
+
+    System.out.println(str.length());
+    
+    System.out.println(str.substring(4));
+    
+    System.out.println(str.toUpperCase());
+    
+  }
+  
+}
+
+
+----------------------------------------------------------
+W poniższym przykładzie wypisz z ilu znaków składa się string "tweet"
+
+
+public class TweetCounter {
+  
+	public static void main(String[] args) {
+    
+    String tweet = "Liz Lemon, ninjas are kind of cool... I just dont know any personally. Get on that.";  
+
+    // What's the character count?
+	
+	
+    
+  }
+  
+}
+
+
+----------------------------------------------------------
+Wpisz w zadeklarowane zmienne swoje imię i nazwisko a następnie wypisz swoje pełne imię i nazwisko łącząc te 2 stringi w jeden (metoda concat())
+
+
+public class CombineNames {
+  
+	public static void main(String[] args) {
+    
+    // Add your first names:
+    String firstName = "";  
+    String lastName = "";
+
+    // What's the full name?
+    
+    
+  }
+  
+}
+
+
+--------------------------------------------------------
+Wypisz porównanie tekstu ze zmiennej "password" z dwóch przypadkach: gdy tekst się zgadza i gdy jest różny (equals())
+
+
+public class Password {
+  
+  public static void main(String[] args) {
+    
+    String password = "correcthorsebatterystaple";
+    
+    // Write the code:
+    
+    
+  }
+  
+}
+
+
+--------------------------------------------------------
+W poniższym przykładzie wypisz o którego znaku zaczyna się wyrażenie ". .- -" (indexOf())
+
+
+public class MorseCode {
+  
+  public static void main(String[] args) {
+    
+    String code = ".... .. / .. .----. -- / ... --- -. -. -.-- / .- -. -.. / .. / .-.. .. -.- . / - --- / . .- - / .-. .- -- . -.";
+
+    // Write the code:
+    
+    
+  }
+  
+}
+
+
+----------------------------------------------------------
+Wpisz swoje imię i nazwisko w zainicjowane zmienne.
+Wypisz swoje inicjały czyli pierwszą literę pierwszej i drugiej zmiennej (charAt())
+
+public class Initials {
+  
+	public static void main(String[] args) {
+    
+    // Add a first name and a last name:
+    String firstName = "";  
+    String lastName = "";
+    
+    // What are the initials?
+
+    
+  }
+  
+}
+
+
+------------------------------------------------------------
+Zmień argumenty tak aby tylko "Heav'ns" zostało wypisane
+
+public class Poetry {
+  
+	public static void main(String[] args) {
+      
+    String line = "The Heav'ns and all the Constellations rung";     
+    // Change the arguments:
+    System.out.println(line.substring(23, 38));
+    
+  }
+  
+}
+
+
+----------------------------------------------------------------
+Wykonaj polecenie z komentarza w kodzie
+
+
+public class Hashtag {
+  
+  public static void main(String[] args) {
+    
+    String hashtag = "#100DaysOfCode";
+    
+    // Print the hashtag lowercase:
+
+    
+  }
+  
+}
+
+
+------------------------------------------------------------
