@@ -1,0 +1,278 @@
+Wykonaj podany kod i zastanów się z jakiego powodu zwraca błędy
+
+
+import java.util.Arrays;
+
+class Shopping {
+  
+  public static void main(String[] args) {
+    
+    String[] groceryItems = {"steak", "milk", "jelly beans"};
+    double[] prices = {25.00, 2.95, 2.50};
+    
+    // Adding ham to the groceries
+    groceryItems[3] = "ham";
+    prices[3] = 4.99;
+    
+  }
+  
+}
+
+
+------------------------------------------------------
+W podanym poniżej przykładzie zaimportuj bibliotekę "ArrayList" z "java.util"
+Zadeklaruj nową listę tabeli o nazwie "toDoList" i typie Integer (syntax "ArrayList<typZmiennej> nazwaListy = new ArrayList<typZmiennej>()")
+
+
+// import the ArrayList package here:
+
+
+class ToDos {
+  
+  public static void main(String[] args) {
+    
+    // Create toDoList below:
+    
+    
+  }
+  
+}
+
+
+----------------------------------------------------
+Zainicjuj kolejne zadania z listy o nazwach "toDo2" i "toDo3"
+Dodaj zmienne do listy (syntax nazwaListy.add(nazwaZmiennej);)
+
+
+import java.util.ArrayList;
+
+class ToDos {
+    
+  public static void main(String[] args) {
+    
+    ArrayList<String> toDoList = new ArrayList<String>();
+    String toDo1 = "Water plants";
+    // Add more to-dos here:
+    
+    
+    // Add to-dos to toDoList
+    
+    
+    System.out.println(toDoList);
+      
+    
+  }
+  
+}
+
+
+------------------------------------------------
+Wypisz długość obu list za pomocą syntaxu "nazwaListy.size()"
+Wypisz imię detektywa z dłuższą listą
+
+import java.util.ArrayList;
+
+class ToDos {
+    
+  public static void main(String[] args) {
+    
+    // Sherlock
+    ArrayList<String> sherlocksToDos = new ArrayList<String>();
+    
+    sherlocksToDos.add("visit the crime scene");
+    sherlocksToDos.add("play violin");
+    sherlocksToDos.add("interview suspects");
+    sherlocksToDos.add("solve the case");
+    sherlocksToDos.add("apprehend the criminal");
+    
+    // Poirot
+    ArrayList<String> poirotsToDos = new ArrayList<String>();
+    
+    poirotsToDos.add("visit the crime scene");
+    poirotsToDos.add("interview suspects");
+    poirotsToDos.add("let the little grey cells do their work");
+    poirotsToDos.add("trim mustache");
+    poirotsToDos.add("call all suspects together");
+    poirotsToDos.add("reveal the truth of the crime");
+    
+    // Print the size of each ArrayList below:
+    
+      
+    // Print the name of the detective with the larger to-do list:
+    
+  }
+  
+}
+
+
+-----------------------------------------------------------------------
+Wypisz drugi element listy Sherlocka i drugi element listy Poirota za pomocą syntaxu "nazwaListy.get(miejsceNaLiście)" 
+
+
+import java.util.ArrayList;
+
+class ToDos {
+    
+  public static void main(String[] args) {
+    
+    // Sherlock
+    ArrayList<String> sherlocksToDos = new ArrayList<String>();
+    
+    sherlocksToDos.add("visit the crime scene");
+    sherlocksToDos.add("play violin");
+    sherlocksToDos.add("interview suspects");
+    sherlocksToDos.add("solve the case");
+    sherlocksToDos.add("apprehend the criminal");
+    
+    // Poirot
+    ArrayList<String> poirotsToDos = new ArrayList<String>();
+    
+    poirotsToDos.add("visit the crime scene");
+    poirotsToDos.add("interview suspects");
+    poirotsToDos.add("let the little grey cells do their work");
+    poirotsToDos.add("trim mustache");
+    poirotsToDos.add("call all suspects together");
+    poirotsToDos.add("reveal the truth of the crime");
+    
+    System.out.println("Sherlock's third to-do:");
+    // Print Sherlock's third to-do:
+    
+    System.out.println("\nPoirot's second to-do:");
+    // Print Poirot's second to-do:
+    
+  }
+  
+
+------------------------------------------------------------
+Zmień wartość drugiego elementu listy Sherlocka na "listen to Dr. Watson for amusement" i czwartego Poirota na "listen to Captain Hastings for amusement"
+Syntax "nazwaListy.set(miejsceNaLiście, wartość)"
+
+import java.util.ArrayList;
+
+class ToDos {
+    
+  public static void main(String[] args) {
+    
+    // Sherlock
+    ArrayList<String> sherlocksToDos = new ArrayList<String>();
+    
+    sherlocksToDos.add("visit the crime scene");
+    sherlocksToDos.add("play violin");
+    sherlocksToDos.add("interview suspects");
+    sherlocksToDos.add("solve the case");
+    sherlocksToDos.add("apprehend the criminal");
+    
+    // Poirot
+    ArrayList<String> poirotsToDos = new ArrayList<String>();
+    
+    poirotsToDos.add("visit the crime scene");
+    poirotsToDos.add("interview suspects");
+    poirotsToDos.add("let the little grey cells do their work");
+    poirotsToDos.add("trim mustache");
+    poirotsToDos.add("call all suspects together");
+    poirotsToDos.add("reveal the truth of the crime");
+    
+    // Set each to-do below:
+	
+
+    System.out.println("Sherlock's to-do list:");
+    System.out.println(sherlocksToDos.toString() + "\n");
+    System.out.println("Poirot's to-do list:");
+    System.out.println(poirotsToDos.toString());
+  }
+  
+  
+----------------------------------------------------------------
+Usuń wartości "visit the crime scene" z obu list oraz "play violin" z listy Poirota
+Syntax "nazwaListy.remove(wartość)"
+
+
+import java.util.ArrayList;
+
+class ToDos {
+    
+  public static void main(String[] args) {
+    
+    // Sherlock
+    ArrayList<String> sherlocksToDos = new ArrayList<String>();
+    
+    sherlocksToDos.add("visit the crime scene");
+    sherlocksToDos.add("play violin");
+    sherlocksToDos.add("interview suspects");
+    sherlocksToDos.add("solve the case");
+    sherlocksToDos.add("apprehend the criminal");
+    
+    // Poirot
+    ArrayList<String> poirotsToDos = new ArrayList<String>();
+    
+    poirotsToDos.add("visit the crime scene");
+    poirotsToDos.add("interview suspects");
+    poirotsToDos.add("let the little grey cells do their work");
+    poirotsToDos.add("trim mustache");
+    poirotsToDos.add("call all suspects together");
+    poirotsToDos.add("reveal the truth of the crime");
+    
+    // Remove each to-do below:
+    
+      
+    System.out.println(sherlocksToDos.toString() + "\n");
+    System.out.println(poirotsToDos.toString());
+  }
+  
+}
+
+
+-------------------------------------------------------------------
+Wypisz miejsce na liście wartości "solve the case" za pomocą syntaxu "nazwaListy.indexOf(szukanaWartość)"
+
+
+import java.util.ArrayList;
+
+class ToDos {
+    
+  public static void main(String[] args) {
+    
+    // Sherlock
+    ArrayList<String> sherlocksToDos = new ArrayList<String>();
+    
+    sherlocksToDos.add("visit the crime scene");
+    sherlocksToDos.add("play violin");
+    sherlocksToDos.add("interview suspects");
+    sherlocksToDos.add("listen to Dr. Watson for amusement");
+    sherlocksToDos.add("solve the case");
+    sherlocksToDos.add("apprehend the criminal");
+    
+    sherlocksToDos.remove("visit the crime scene");
+    
+    // Calculate to-dos until case is solved:
+    
+    
+
+  }
+  
+}
+
+
+---------------------------------------------------------------------
+Jako ćwiczenie stwórz nową listę i wykonaj do niej następujące operacje:
+Dodaj kilka elementów do listy za pomocą add().
+Zwróć wielkoć listy za pomocą size().
+Zwróć element z listy za pomocą get().
+Zmień wartości na liście używając set().
+usuń wartość za pomocą remove().
+Zwróć miejsce na liście określonego elementu za pomocą indexOf()
+
+
+
+import java.util.ArrayList;
+
+class List {
+  
+  public static void main(String[] args) {
+    
+  }
+  
+}
+
+
+--------------------------------------------------------------------
