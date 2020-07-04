@@ -1,0 +1,52 @@
+public class Test20 {
+    public static void main(String[] args) {
+        double recommendedWaterIntake = 8;
+        double daysInChallenge = 30;
+        double yourWaterIntake = 235.5;
+        double totalRecommendedAmount = recommendedWaterIntake * daysInChallenge;
+        System.out.println(totalRecommendedAmount);
+        boolean isChallengeComplete = yourWaterIntake >= totalRecommendedAmount;
+        System.out.println(isChallengeComplete);
+    }
+}
+
+=============================================
+
+public class Test21 {
+    public static void main(String[] args){
+        String line1 = "Nah nah nah nah nah nah nah nah nah yeah";
+        String line2 = "Nah nah nah nah nah nah, nah nah nah, hey Jude";
+        String line3 = "Nah nah nah nah nah nah, nah nah nah, hey Jude";
+        System.out.println(line1.equals(line2));
+        System.out.println(line2.equals(line3));
+
+    }
+}
+
+
+public class Test22 {
+    public static void main(String[] args){
+        int animals = 12;
+        String species = "zebra";
+        String zooDescription = "Our zoo has " + animals + " " +species + "s!";
+        System.out.println(zooDescription);
+    }
+}
+
+
+====================================
+
+
+public class Test23 {
+    public static void main(String[] args){
+        double balance = 1000.75;
+        double amountToWithdraw = 250;
+        double updatedBalance = balance - amountToWithdraw;
+        System.out.println(updatedBalance);
+        double amountForEachFriend = updatedBalance / 3;
+        System.out.println(amountForEachFriend);
+        boolean canPurchaseTicket = amountForEachFriend >= 250;
+        System.out.println(canPurchaseTicket);
+        System.out.println("I gave each friend " + amountForEachFriend + "...");
+    }
+}
