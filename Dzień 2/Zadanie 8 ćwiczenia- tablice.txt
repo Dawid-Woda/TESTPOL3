@@ -1,0 +1,271 @@
+Stwórz w IntelliJ nową klasę o nazwie "Newsfeed" i przenalaiuj jej kod
+
+public class Newsfeed {
+  
+  String[] trendingArticles;
+  int[] views;
+  double[] ratings;
+  
+  public Newsfeed(String[] initialArticles, int[] initialViews, double[] initialRatings){
+    trendingArticles = initialArticles;
+    views = initialViews;
+    ratings = initialRatings;
+  }
+  
+  public String getTopArticle(){
+    return trendingArticles[0];
+  }
+  
+  public void viewArticle(int articleNumber){
+    views[articleNumber] = views[articleNumber] + 1;
+    System.out.println("The article '" + trendingArticles[articleNumber] + "' has now been viewed " + views[articleNumber] + " times!");
+  }
+  
+  public void changeRating(int articleNumber, double newRating){
+    if (newRating > 5 || newRating < 0) {
+      System.out.println("The rating must be between 0 and 5 stars!");
+    } else {
+      ratings[articleNumber] = newRating;
+      System.out.println("The article '" + trendingArticles[articleNumber] + "' is now rated " + ratings[articleNumber] + " stars!");
+    }
+  }
+  
+  public static void main(String[] args){
+    String[] robotArticles = {"Oil News", "Innovative Motors", "Humans: Exterminate Or Not?", "Organic Eye Implants", "Path Finding in an Unknown World"};
+    int[] robotViewers = {87, 32, 13, 11, 7};
+    double[] robotRatings = {2.5, 3.2, 5.0, 1.7, 4.3};
+    Newsfeed robotTimes = new Newsfeed(robotArticles, robotViewers, robotRatings);
+    
+    robotTimes.viewArticle(2);
+    robotTimes.viewArticle(2);
+    System.out.println("The top article is " + robotTimes.getTopArticle());
+    robotTimes.changeRating(3, 5);
+  }
+}
+
+
+-------------------------------------------------------------------------------------------------------------
+Stwórz nową publiczną metodę "getTopic" nie przyjmującą argumentów i zwracającą tablicę typu String.
+Wewnątrz stwórz tablicę o nazwie "topics" z wartościami: "Opinion Tech Science Health". Zwróć tablicę.
+Odkomentuj zakomentowany kawałek kodu żeby sprawdzić działanie metody.
+
+public class Newsfeed {
+  
+  
+  public Newsfeed(){
+    
+  }
+  
+  // Create getTopics() below:
+
+  public static void main(String[] args){
+    Newsfeed sampleFeed = new Newsfeed();
+    
+	/*
+    String[] topics = sampleFeed.getTopics();
+    System.out.println(topics);
+	*/
+    
+  }
+}
+
+
+---------------------------------------------------------------------------------------------------------------------
+Zaimportuj bibliotekę "Arrays" za pomocą komendy "import" i syntaxu "java.util.nazwaBiblioteki"
+Za pomocą metody "toString" z biblioteki "Arrays" wypisz tablicę "topics" za pomocą syntaxu "biblioteka.metoda(nazwaTablicy)"
+
+
+// import the Arrays package here:
+
+public class Newsfeed {
+  
+  
+  public Newsfeed(){
+    
+  }
+    
+  public String[] getTopics(){
+    String[] topics = {"Opinion", "Tech", "Science", "Health"};
+    return topics;
+  }
+  
+
+  public static void main(String[] args){
+    Newsfeed sampleFeed = new Newsfeed();
+    String[] topics = sampleFeed.getTopics();
+    System.out.println(topics);
+  }
+}
+
+
+
+---------------------------------------------------------------------------------------------------
+W metodzie "getTopTopic" zwróć pierwszy element tablicy "topics" za pomocą "return" (nazwaTablicy[numerElementu])- pamiętaj że w programowaniu pierwszy lement to 0!!!!
+Jako ostatnią linijkę w kodzie mamy: "System.out.println("The " + sampleFeed.topics[1] + " topic has been viewed " + sampleFeed.views[1] + " times!");"
+Aby wypełnić ten tekst w metodzie "viewTopic" dla topicIndex w tablicy views przyrównaj ją do tej wartości powiększonej o 1
+Syntax: "tablica[zmienna]" oraz powiększenie to przykładowo- "numCats = numCats + 1;"
+
+import java.util.Arrays;
+
+public class Newsfeed {
+  
+  String[] topics = {"Opinion", "Tech", "Science", "Health"};
+  int[] views = {0, 0, 0, 0};
+  
+  public Newsfeed(){
+
+  }
+    
+  public String[] getTopics(){
+    return topics;
+  }
+  
+  public String getTopTopic(){
+
+  }
+  
+  public void viewTopic(int topicIndex){
+
+  }
+
+  public static void main(String[] args){
+    Newsfeed sampleFeed = new Newsfeed();
+    
+    System.out.println("The top topic is "+ sampleFeed.getTopTopic());
+    
+    sampleFeed.viewTopic(1);
+    sampleFeed.viewTopic(1);
+    sampleFeed.viewTopic(3);
+    sampleFeed.viewTopic(2);
+    sampleFeed.viewTopic(2);
+    sampleFeed.viewTopic(1);
+    
+    System.out.println("The " + sampleFeed.topics[1] + " topic has been viewed " + sampleFeed.views[1] + " times!"); 
+  }
+}
+
+
+-------------------------------------------------------------------------------------------
+W metodzie Newsfeed zainicjalizuj wielkość tablicy "favoriteArticles" na 10 elementów w syntaxie "nazwaTabeli = new typTable[wielkość];"
+W metodzie "setFavoriteArticle" spraw by artykuł o danym indeksie skutkował stworzeniem obiekty "newArticle" (nazwaZmiennejTabeli[nazwaZmiennejIndeksu] = newArticle)
+
+
+import java.util.Arrays;
+
+public class Newsfeed {
+  
+  String[] topics = {"Opinion", "Tech", "Science", "Health"};
+  int[] views = {0, 0, 0, 0};
+  String[] favoriteArticles;
+  
+  public Newsfeed(){
+    // Initialize favoriteArticles here:
+	
+  }
+  
+  public void setFavoriteArticle(int favoriteIndex, String newArticle){
+    // Add newArticle to favoriteArticles:
+    
+  }
+    
+  public static void main(String[] args){
+    Newsfeed sampleFeed = new Newsfeed();
+    
+    sampleFeed.setFavoriteArticle(2, "Humans: Exterminate Or Not?");
+    sampleFeed.setFavoriteArticle(3, "Organic Eye Implants");
+    sampleFeed.setFavoriteArticle(0, "Oil News");
+    
+    System.out.println(Arrays.toString(sampleFeed.favoriteArticles));
+  }
+}
+
+
+
+------------------------------------------------------------------------------------
+W metodzie "getNumTopics" zwróć długość "topics" (nazwa.length)
+
+
+import java.util.Arrays;
+
+public class Newsfeed {
+  
+  String[] topics = {"Opinion", "Tech", "Science", "Health"};
+  int[] views = {0, 0, 0, 0};
+  
+  public Newsfeed(){
+
+  }
+    
+  public String[] getTopics(){
+    return topics;
+  }
+  
+  public int getNumTopics(){
+    return topics.length;
+  }
+  
+  public static void main(String[] args){
+    Newsfeed sampleFeed = new Newsfeed();
+    
+    System.out.println("The number of topics is "+ sampleFeed.getNumTopics());
+   
+  }
+}
+
+
+----------------------------------------------------------------------------------
+Stwórzmy warunek w "else if" odpalający go gdy pierwszy argument będzie miał wartość "Humans"
+Z linii komend wykonajmy 2 metody: "java Newsfeed Human" "java Newsfeed Robot"
+
+
+import java.util.Arrays;
+
+public class Newsfeed {
+  
+  String[] topics;
+  
+  public Newsfeed(String[] initialTopics) {
+		topics = initialTopics;
+  }
+  
+  public static void main(String[] args) {
+		Newsfeed feed;
+    if (args[0].equals("Human")) {
+      
+      //topics for a Human feed:
+      String[] humanTopics = {"Politics", "Science", "Sports", "Love"};
+			feed = new Newsfeed(humanTopics);
+      
+    } else if(_____________) {
+      
+      //topics for a Robot feed:
+      String[] robotTopics = {"Oil", "Parts", "Algorithms", "Love"};
+      feed = new Newsfeed(robotTopics);
+      
+    } else {
+      String[] genericTopics = {"Opinion", "Tech", "Science", "Health"};
+      feed = new Newsfeed(genericTopics);
+    }
+        
+    System.out.println("The topics in this feed are:");
+    System.out.println(Arrays.toString(feed.topics));
+  }
+}
+
+
+------------------------------------------------------------------------------
+Stwórz tabelę typu String o nazwie "student" i nadaj jej wartość "Sade, Alexus, Sam, Koma" wewnątrz metody "main"
+Stwórz pustą tablicę typu double o nazwir "mathScores" i nadaj jej wielkość 4
+Wypełnij tabelę na miejscu pierwszym wynikiem "94.5" a na trzecim "76.8"
+Wypisz tekst "The number of students in the class is długośćTabeliStudents"
+
+
+import java.util.Arrays;
+
+public class Classroom {
+  
+  public static void main(String[] args){
+
+
+  }
+}
