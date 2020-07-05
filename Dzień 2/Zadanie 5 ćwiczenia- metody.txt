@@ -1,0 +1,318 @@
+W tym zestawie ćwiczeń nauczymy się zapisywać krócej poniższy kod. Przeklej go i sprawdź jak działa:
+
+
+public class SavingsAccount {
+  
+  int balance;
+  
+  public SavingsAccount(int initialBalance){
+    balance = initialBalance;
+  }
+  
+  public static void main(String[] args){
+    SavingsAccount savings = new SavingsAccount(2000);
+    
+    //Check balance:
+    System.out.println("Hello!");
+    System.out.println("Your balance is "+savings.balance);
+    
+    //Withdrawing:
+    int afterWithdraw = savings.balance - 300;
+    savings.balance = afterWithdraw;
+    System.out.println("You just withdrew "+300);
+    
+    //Check balance:
+    System.out.println("Hello!");
+    System.out.println("Your balance is "+savings.balance);
+    
+    //Deposit:
+    int afterDeposit = savings.balance + 600;
+    savings.balance = afterDeposit;
+    System.out.println("You just deposited "+600);
+    
+    //Check balance:
+    System.out.println("Hello!");
+    System.out.println("Your balance is "+savings.balance);
+    
+    //Deposit:
+    int afterDeposit2 = savings.balance + 600;
+    savings.balance = afterDeposit2;
+    System.out.println("You just deposited "+600);
+    
+    //Check balance:
+    System.out.println("Hello!");
+    System.out.println("Your balance is "+savings.balance);
+    
+  }       
+}
+
+
+-------------------------------------------------------------------
+W poniższym przykładzie stwórz publiczną metode "advertise" (public void).
+W jej wnętrzu zwróć 2 teksty "Come spend some money!" oraz "Selling productType!" (w drugim przypadku podmieniając wartość na zmienną)
+
+public class Store {
+  // instance fields
+  String productType;
+  
+  // constructor method
+  public Store(String product) {
+    productType = product;
+  }
+  
+  // advertise method
+  
+  // main method
+  public static void main(String[] args) {
+    
+  }
+}
+
+
+---------------------------------------------------------------------------
+W metodzie main wywołaj metodę "advertise" dla obiektu lemonade stand (obiekt.metoda())
+
+
+public class Store {
+  // instance fields
+  String productType;
+  
+  // constructor method
+  public Store(String product) {
+    productType = product;
+  }
+  
+  // advertise method
+  public void advertise() {
+		System.out.println("Selling " + productType + "!");
+    System.out.println("Come spend some money!");
+  }
+  
+  // main method
+  public static void main(String[] args) {
+    Store lemonadeStand = new Store("Lemonade");
+    
+  }
+}
+
+
+-----------------------------------------------------------------------------
+W metodzie "advertise" zamień zmienną "productType" na "cookie" zdefiniowaną w metodzie main i wykonaj kod.
+Program zwróci błąd- zmienna cookie znajduje się poza obszarem metody "advertise" (obszar metody to wszystko ograniczone znakami {} w danej metodzie- nie mylić z zakresem klasy)
+W metodzie main zwróć zmienną message z metodą advertise.
+Po raz kolejny możemy zaobserwować taki sam błąd.
+Usuń linijkę powodującą błąd.
+
+public class Store {
+  // instance fields
+  String productType;
+  
+  // constructor method
+  public Store(String product) {
+    productType = product;
+  }
+  
+  // advertise method
+  public void advertise() {
+    String message = "Selling " + productType + "!";
+		System.out.println(message);
+  }
+  
+  // main method
+  public static void main(String[] args) {
+    String cookie = "Cookies";
+    Store cookieShop = new Store(cookie);
+    
+    cookieShop.advertise();
+  }
+}
+
+----------------------------------------------------------------------------------
+Stwórz nową publiczną metodę "greetCustomer".
+Powinna ona przyjmować parametr typu String o nazwie "customer".
+Wewnątrz powinna zwracać: "Welcome to the store, customer!" (z podmianą zmiennej).
+W metodzie main wywołaj metodę "greetCutomer" na obiekcie "lemonadeStand" dodając argument tak aby uzupełnić zwracaną wiadomość.
+
+public class Store {
+  // instance fields
+  String productType;
+  
+  // constructor method
+  public Store(String product) {
+    productType = product;
+  }
+  
+  // advertise method
+  public void advertise() {
+    String message = "Selling " + productType + "!";
+		System.out.println(message);
+  }
+  
+  // main method
+  public static void main(String[] args) {
+    Store lemonadeStand = new Store("Lemonade");
+    
+  }
+}
+
+
+
+-------------------------------------------------------------------------------------
+W naszym sklepie zostaliśmy zmuszeni od podniesienia cen.
+W metodzie "increasePrice" stwórz zmienną typu double "newPrice" będącą wynikiem dodawania "price" oraz "priceToAdd"
+Aby nadpisywać zmienną po wywołaniu klasy przyrównaj "price" do "newPrice" jako pole instancji (jak w metodzie powyżej)
+Zwiększ cenę lemoniady w obiektcie "lemonadeStand" o 1.5 poprzez wywołanie na niej metody "increasePrice"
+Wypisz nową cenę.
+
+public class Store {
+  // instance fields
+  String productType;
+  double price;
+  
+  // constructor method
+  public Store(String product, double initialPrice) {
+    productType = product;
+    price = initialPrice;
+  }
+  
+  // increase price method
+  public void increasePrice(double priceToAdd){
+    
+  }
+  
+  // main method
+  public static void main(String[] args) {
+    Store lemonadeStand = new Store("Lemonade", 3.75);
+    
+  }
+}
+
+-----------------------------------------------------------------------------------------------
+Teraz postaramy się wyciągnąć zmienną poza granice metody dzięki "return" (return nazwaZmiennej;)
+Stwórz nową metodę publiczną typu double (double zamiast void) o nazwie "getPriceWithTax" nieprzyjmującą żadnych argumentów
+Wewnątrz stwórz zmienną typu double o nazwie "totalPrice" będącą wynikiem dodania "price" i "price" pomnożonego przez 0.08
+Zwróć zmienną "totalPrice"
+W metodzie main ustal zmienną typu double o nazwie "lemonadePrice" będącej wynikiem zastosowania metody "getPriceWithTax" na obiekcie "lemonadeStand"
+Wypisz zmienną "lemonadePrice"
+
+public class Store {
+  // instance fields
+  String productType;
+  double price;
+  
+  // constructor method
+  public Store(String product, double initialPrice) {
+    productType = product;
+    price = initialPrice;
+  }
+  
+  // increase price method
+  public void increasePrice(double priceToAdd){
+    double newPrice = price + priceToAdd;
+    price = newPrice;
+  }
+  
+  // get price with tax method
+
+  // main method
+  public static void main(String[] args) {
+    Store lemonadeStand = new Store("Lemonade", 3.75);
+
+  }
+}
+
+
+--------------------------------------------------------------------------------------------------------------
+W metodzie main wypisz zmienne "lemonadeStand" i "cookieShop". Zauważ że obecnie zwracają nazwę klasy i umiejscowienie bloku pamięci na dysku- jest to niezbyt czytelne ani użyteczne.
+Stwórz zmienną typu String o nazwie "toString" nieprzyjmującą żadnych argumentów.
+Wewnątrz zwróć string "Store" i wykonaj kod
+Zwróć uwagę że zwrócony tekst wygląda już lepiej
+Zmień zwracany string na: "This store sells productType at a price of price." za pomocą połączenia stringów i zmiennych.
+
+public class Store {
+  // instance fields
+  String productType;
+  double price;
+  
+  // constructor method
+  public Store(String product, double initialPrice) {
+    productType = product;
+    price = initialPrice;
+  }
+  
+  // increase price method
+  public void increasePrice(double priceToAdd){
+    double newPrice = price + priceToAdd;
+    price = newPrice;
+  }
+  
+  // get price with tax method
+  public double getPriceWithTax(){
+    double tax = 0.08;
+    double totalPrice = price + price*tax;
+    return totalPrice;
+  }
+
+  // main method
+  public static void main(String[] args) {
+    Store lemonadeStand = new Store("Lemonade", 3.75);
+    Store cookieShop = new Store("Cookies", 5);
+
+  }
+}
+
+
+-----------------------------------------------------------------------------------------------------------------
+W ostatnim zadaniu wrócimy znów do pierwszego przyładu
+Stwórz metodę o nazwie "checkBalance" zwracającą "Hello! Your balance is balance" z użyciem odpowiedniej zmiennej.
+Stwórz metodę o nazwie "deposit" przyjmująca argument typu int "amountToDeposit" nadpisującą "balance" wynikiem dodawania "balance" + "amountToDeposit"
+Wypisz tekst "You just withdrew amountToWithdraw"
+Stwórz metodę typu int o nazwie "withdraw" przyjmująca argument typu int "amountToWithdraw" nadpisującą "balance" wynikiem odejmowania "balance" - "amountToWithdraw"
+Wypisz tekst "You just withdrew amountToWithdraw"
+Zwróć "amountToWithdraw"
+Sprawdź działanie metod za pomocą wywoływania nowyo stworzonych metod na obiekcie "savings" z różnymi sumami pieniędzy.
+
+public class SavingsAccount {
+  
+  int balance;
+  
+  public SavingsAccount(int initialBalance){
+    balance = initialBalance;
+  }
+  
+  public static void main(String[] args){
+    SavingsAccount savings = new SavingsAccount(2000);
+    
+    //Check balance:
+    System.out.println("Hello!");
+    System.out.println("Your balance is "+savings.balance);
+    
+    //Withdrawing:
+    int afterWithdraw = savings.balance - 300;
+    savings.balance = afterWithdraw;
+    System.out.println("You just withdrew "+300);
+    
+    //Check balance:
+    System.out.println("Hello!");
+    System.out.println("Your balance is "+savings.balance);
+    
+    //Deposit:
+    int afterDeposit = savings.balance + 600;
+    savings.balance = afterDeposit;
+    System.out.println("You just deposited "+600);
+    
+    //Check balance:
+    System.out.println("Hello!");
+    System.out.println("Your balance is "+savings.balance);
+    
+    //Deposit:
+    int afterDeposit2 = savings.balance + 600;
+    savings.balance = afterDeposit2;
+    System.out.println("You just deposited "+600);
+    
+    //Check balance:
+    System.out.println("Hello!");
+    System.out.println("Your balance is "+savings.balance);
+    
+  }       
+}

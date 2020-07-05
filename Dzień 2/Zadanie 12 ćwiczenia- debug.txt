@@ -1,0 +1,82 @@
+Trzy rodzaje błędów w Java:
+Syntax error- błąd w składni pojawiający się w czasie kompilacji programu/kodu
+Run-time error- Błąd wykonawczy w trakcie działanie programu
+Logic error- błędy logiczne wynikające z pomyłek lub błędnych założeń
+----------------------------------------------------------------------------------
+
+Wykonaj poniższy kod i popraw błąd wskazany przez kompilator
+
+public class Debug {
+
+  public static void main(String[] args) {
+    
+    System.out.println("       1");
+    System.out.println("     2 3");
+    System.out.println("   4 5 6");
+    System.out.println("7 8 9 10")
+    
+  }
+  
+}
+
+
+--------------------------------------------------------
+Wykonaj poniższy kod i popraw błąd wskazany przez IDE
+
+
+public class Debug {
+
+  public static void main(String[] args) {
+    
+    int width = 0;
+    int length = 40;
+    
+    int ratio = length / width;
+    
+    System.out.println(ratio);
+    
+  }
+  
+}
+
+
+------------------------------------------------------------------
+Teraz spróbujemy obsługi błędów za pomocą try-catch
+Syntax: try {kodDoWykonania} catch (co ma zostać złapane) {kodDoWykonania}
+Na kodzie z poprzedniego zadania opakuj kawałek kodu który powodował błąd w "try {}"
+W catch zawrzyj "catch (nazwaBłęduZPoprzedniegoZadania e) {wypisz(nazwaBłęduZPoprzedniegoZadania + e.getMessage());}
+
+
+public class Debug {
+
+  public static void main(String[] args) {
+    
+    int width = 0;
+    int length = 40;
+    
+    int ratio = length / width;
+  }
+  
+}
+
+
+--------------------------------------------------------------------
+public class Debug {
+
+  public static void main(String[] args) {
+    
+    int steps = 10;
+    
+    for (int i = 1; i <= steps; i++) {
+      
+      System.out.println("Step #" + i);
+      
+    }
+    
+  }
+  
+}
+
+
+
+----------------------------------------------------------

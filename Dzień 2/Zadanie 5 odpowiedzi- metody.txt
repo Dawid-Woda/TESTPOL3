@@ -1,0 +1,226 @@
+public class Store {
+  // instance fields
+  String productType;
+  
+  // constructor method
+  public Store(String product) {
+    productType = product;
+  }
+  
+  // advertise method
+  public void advertise() {
+    System.out.println("Come spend some money!");
+    System.out.println("Selling "+productType+"!");
+  }
+  // main method
+  public static void main(String[] args) {
+    
+  }
+}
+
+-----------------------------------------------------------
+public class Store {
+  // instance fields
+  String productType;
+  
+  // constructor method
+  public Store(String product) {
+    productType = product;
+  }
+  
+  // advertise method
+  public void advertise() {
+		System.out.println("Selling " + productType + "!");
+    System.out.println("Come spend some money!");
+  }
+  
+  // main method
+  public static void main(String[] args) {
+    Store lemonadeStand = new Store("Lemonade");
+    lemonadeStand.advertise();
+    
+  }
+}
+
+
+---------------------------------------------------------------
+public class Store {
+  // instance fields
+  String productType;
+  
+  // constructor method
+  public Store(String product) {
+    productType = product;
+  }
+  
+  // advertise method
+  public void advertise() {
+    String message = "Selling " + productType + "!";
+		System.out.println(message);
+  }
+  public void greetCustomer(String customer) {
+    System.out.println("Welcome to the store, " + customer + "!");
+  }
+  // main method
+  public static void main(String[] args) {
+    Store lemonadeStand = new Store("Lemonade");
+    lemonadeStand.greetCustomer("dear customer");
+    
+  }
+}
+
+--------------------------------------------------------------------
+public class Store {
+  // instance fields
+  String productType;
+  double price;
+  
+  // constructor method
+  public Store(String product, double initialPrice) {
+    productType = product;
+    price = initialPrice;
+  }
+  
+  // increase price method
+  public void increasePrice(double priceToAdd){
+    double newPrice = price + priceToAdd;
+    price = newPrice;
+  }
+  
+  // main method
+  public static void main(String[] args) {
+    Store lemonadeStand = new Store("Lemonade", 3.75);
+    lemonadeStand.increasePrice(1.5);
+    System.out.println(lemonadeStand.price);
+  }
+}
+
+------------------------------------------------------------------------------
+public class Store {
+  // instance fields
+  String productType;
+  double price;
+  
+  // constructor method
+  public Store(String product, double initialPrice) {
+    productType = product;
+    price = initialPrice;
+  }
+  
+  // increase price method
+  public void increasePrice(double priceToAdd){
+    double newPrice = price + priceToAdd;
+    price = newPrice;
+  }
+  
+  // get price with tax method
+  public double getPriceWithTax(){
+    double totalPrice = price + price * 0.08;
+    return totalPrice;
+  }
+  // main method
+  public static void main(String[] args) {
+    Store lemonadeStand = new Store("Lemonade", 3.75);
+    double lemonadePrice = lemonadeStand.getPriceWithTax();
+    System.out.println(lemonadePrice);
+
+  }
+}
+
+
+---------------------------------------------------------------
+public class Store {
+  // instance fields
+  String productType;
+  double price;
+
+  public String toString(){
+       return "This store sells " + productType + " at a price of " + price + ".";
+   }
+
+  // constructor method
+  public Store(String product, double initialPrice) {
+    productType = product;
+    price = initialPrice;
+  }
+  
+  // increase price method
+  public void increasePrice(double priceToAdd){
+    double newPrice = price + priceToAdd;
+    price = newPrice;
+  }
+  
+  // get price with tax method
+  public double getPriceWithTax(){
+    double tax = 0.08;
+    double totalPrice = price + price*tax;
+    return totalPrice;
+  }
+
+  // main method
+  public static void main(String[] args) {
+    Store lemonadeStand = new Store("Lemonade", 3.75);
+    Store cookieShop = new Store("Cookies", 5);
+    System.out.println(lemonadeStand);
+    System.out.println(cookieShop);
+  }
+}
+------------------------------------------------------------
+
+
+
+public class SavingsAccount {
+  
+  int balance;
+  
+  public SavingsAccount(int initialBalance){
+    balance = initialBalance;
+  }
+  
+  public void checkBalance(){
+    System.out.println("Hello!");
+    System.out.println("Your balance is "+balance);
+  }
+  
+  public void deposit(int amountToDeposit){
+    balance = amountToDeposit + balance;
+    System.out.println("You just deposited " + amountToDeposit);
+  }
+  
+  public int withdraw(int amountToWithdraw){
+    balance = balance - amountToWithdraw;
+    System.out.println("You just withdrew " + amountToWithdraw);
+    return amountToWithdraw;
+  }
+  
+  public String toString(){
+    return "This is a savings account with " + balance + " saved.";
+  }
+  
+  public static void main(String[] args){
+    SavingsAccount savings = new SavingsAccount(2000);
+    
+    //Check balance:
+    savings.checkBalance();
+    
+    //Withdrawing:
+    savings.withdraw(300);
+    
+    //Check balance:
+    savings.checkBalance();
+    
+    //Deposit:
+    savings.deposit(600);
+    
+    //Check balance:
+    savings.checkBalance();
+    
+    //Deposit:
+    savings.deposit(600);
+    
+    //Check balance:
+    savings.checkBalance();
+    
+    System.out.println(savings);
+  }       
+}

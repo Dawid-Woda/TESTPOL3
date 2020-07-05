@@ -1,0 +1,117 @@
+Stwórz publiczną klasę o nawie "Store" i zdefiniuj w niej pustą metodę main()
+
+------------------------------------------------------------------------------
+Do podanego poniżej kodu dodaj wypisanie tekstu "I am inside the constructor method." w konstruktorze "Store".
+Zauważ że dodanie linii wypisania nie skutkuje pojawieniem się tekstu- kod wewnątrz konstruktora nie został wykonany.
+
+W metodzie main() stwórz nową instancję Store o nazwie "lemonadeStand" oraz zwróć ją.
+
+
+public class Store {
+  
+  // new method: constructor!
+  public Store() {
+
+  }
+  
+  // main method is where we create instances!
+  public static void main(String[] args) {
+    System.out.println("Start of the main method.");
+    
+    // create the instance below
+    
+    // print the instance below
+    
+  }
+}
+
+
+---------------------------------------------------------------------------
+Zadeklaruj pole instancji typu String o nazwie "productType"
+
+
+public class Store {
+  // declare instance fields here!
+  
+  
+  // constructor method
+  public Store() {
+    System.out.println("I am inside the constructor method.");
+  }
+  
+  // main method
+  public static void main(String[] args) {
+    System.out.println("This code is inside the main method.");
+    
+    Store lemonadeStand = new Store();
+    
+    System.out.println(lemonadeStand);
+  }
+}
+
+
+------------------------------------------------------------------------------
+Dodaj parametr "product" do metody Store
+
+Wewnątrz konstruktora stwórz zmienną "productType" równą "product"
+
+
+public class Store {
+  // instance fields
+  String productType;
+  
+  // constructor method
+  public Store() {
+    
+  }
+  
+  // main method
+  public static void main(String[] args) {
+    
+    
+  }
+}
+
+
+------------------------------------------------------------------------------
+Stwórz w metodzie main nową instację Store z argumentem "lemonade" (Obiekt nazwainstancji = new obiekt ("argument"))
+Nastęnie zwróć pole productType dla naszego nowego obiektu sklepu (instancja.pole)
+
+public class Store {
+  // instance fields
+  String productType;
+  
+  // constructor method
+  public Store(String product) {
+    productType = product;
+  }
+  
+  // main method
+  public static void main(String[] args) {
+    
+  }
+}
+
+-----------------------------------------------------------------------------
+Do klasy "Store" dodaj dwa nowe pola instancji "inventoryCount" typu int oraz "inventoryPrice" typu double
+
+Dodaj nowe pola do metody konstruktora jako "count" i "price" (zarówno w wywołaniu jak i wnętrzu konstruktora)
+
+Stwórz nową instancję "Store" o nazwie "CookieShop" która przyjmie argumenty cookies,12,3.75
+
+
+public class Store {
+  // instance fields
+  String productType;
+  
+  // constructor method
+  public Store(String product) {
+    productType = product;
+  }
+  
+  // main method
+  public static void main(String[] args) {
+  }
+}
+
+-------------------------------------------------------------------------------
