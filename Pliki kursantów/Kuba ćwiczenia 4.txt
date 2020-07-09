@@ -1,0 +1,53 @@
+public class Debug {
+
+    public static void main(String[] args) {
+
+        System.out.println("       1");
+        System.out.println("     2 3");
+        System.out.println("   4 5 6");
+        System.out.println("7 8 9 10");
+
+    }
+
+}
+
+-------
+
+public class Debug1 {
+
+    public static void main(String[] args) {
+
+        int width = 0;
+        int length = 40;
+        try {
+            int ratio = length / width;
+            System.out.println(ratio);
+                } catch(ArithmeticException e) {
+                   System.err.println("nie można dzielić przez zero");
+        }
+
+    }
+
+}
+
+---------
+
+public class Debug2 {
+
+    public static void main(String[] args) {
+
+        int width = 0;
+        int length = 40;
+        try {
+            int ratio = length / width;
+            System.out.println(ratio);
+            }   catch(ArithmeticException e) {
+                    System.err.println("ArithmeticException "+ e.getMessage());
+        }
+
+    }
+
+}
+
+---------
+
