@@ -1,0 +1,31 @@
+1a
+Jako klient na stronie banku
+Chcę zalogować się na sowje konto bonkowe
+Aby  sporawdzić  ile mam środków na koncie
+1.b
+
+Jako klient na stronie banku
+Chcę zalogować się na sowje konto bonkowe
+Aby  zablokować kartę bankowatową
+
+2.a
+Jako klient banku
+Chcę wykonać przelew
+Aby   przesłać środki na koncie
+
+2.b
+Jako klient banku
+Chcę zobaczyć historię operacji
+Aby   sprawdzić czy przesłanie środków zostało wykonane
+
+3.a
+Jako  użytkownik strony internetowej
+Chcę zalogować się
+Aby  sprawdzić status użytkownika
+
+3.b
+Jako  użytkownik strony internetowej
+Chcę zalogować się
+Aby  sprawdzić status użytkownika kolegi
+
+
