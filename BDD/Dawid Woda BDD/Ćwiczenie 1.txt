@@ -1,0 +1,8 @@
+Scenariusz 1: Logowanie do banku
+
+1a
+Jako u¿ytkownik
+Chcê zalogowac siê do banku na pomoc¹ poprawnego loginu i has³a
+Aby móc uzyskaæ dostêp do swojego konta online
+
+1b
