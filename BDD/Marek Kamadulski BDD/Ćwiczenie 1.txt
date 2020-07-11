@@ -2,7 +2,37 @@ Scenariusz 1: Logowanie do banku
 
 
 1a.
-Jako użytkownik chcę zalogować się do banku 
+Jako klient 
+Chcę zalogować się do banku uzywając prawidłowego loginu i hasła
+Aby sprawdzić poprawność działania strony logowania
+
+1b.
+Jako gość
+Chcę spróbować zalogować się za pomocą niepoprawnych danych
+Aby sprawdzić stan zabezpieczeń serwisu bankowego
 
 
 
+Scenariusz 2: Przesyłanie środków na koncie
+
+1a.
+Jako klient
+Chcę przełać środki między własnymi rachunkami
+Aby sprawdzić działanie przelewów wewnętrznych nie wymagających potwierdzenia kodem SMS
+
+1b.
+Jako klient
+Chcę przelać środki na zewnętrzne konto bankowe
+Aby sprawdzić działanie potwierdzenia przelewu przez kod SMS
+
+Scenariusz 3: Sprawdzanie statusu użytkownika
+
+1a.
+Jako klient
+Chcę zweryfikować status użytkownika po resetowaniu hasła z powodu podania trzykrotnie nieprawidłowych danych logowania
+Aby sprawdzić poprawność systemu odzyskiwania hasła
+
+1b. 
+Jako klient
+Chcę mieć możliwość nadania nowego hasła do serwisu bankowego po nieudanym logowaniu
+Aby sprawdzić jaki mam aktualny status użytkownika
