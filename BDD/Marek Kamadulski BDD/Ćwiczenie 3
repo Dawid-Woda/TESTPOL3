@@ -1,0 +1,20 @@
+
+Feature: internal transfer
+Background: valid bank account
+ Given I am logged in
+ And I have $50 on my account
+Scenario: First profile select
+ Given I request to transfer $45 to my second bank account
+ When I am asked to write my SMS code
+And to confirm money transfer
+ Then I see internal money transfer confirmation
+ 
+ 
+ 
+ 
+ 
+Scenario: Next profile select
+ Given I am on dashboard
+ And I have selected profile
+ When I select from dropdown with list
+ Then I see dashboard for this

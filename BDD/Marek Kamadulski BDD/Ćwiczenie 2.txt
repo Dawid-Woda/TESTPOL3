@@ -1,0 +1,19 @@
+Nazwa: Logowanie do banku
+Inicjator: użytkownik
+Cel: logowanie do serwisu bankowego
+Główny scenariusz:
+1. Użytkownik zgłasza chęć zalogowania do swojego panelu użytkownika na stronie serwisu bankowego
+2. Użytkownik wpisuje poprawny login
+3. System przenosi użytkownika na stronę wpisywania hasła
+4. Użytkownik wpisuje poprawne hasło
+5. System wymaga podania kodu sms wysłanego na nr telefonu przypisany do konta użytkownika
+6. Użytkownik podaje poprawny kod z SMSa
+7. Użytkownik jest zalogowany do serwisu
+
+2a. Błędny login
+a. system podaje informację o błędnym loginie
+b. system prosi o podanie poprawnego loginu
+
+3a. Błędne hasło
+a. system podaje informację o błędnym haśle
+b. użytkownik ma jeszcze 2 próby podania poprawnego hasła
