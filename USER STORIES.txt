@@ -1,0 +1,29 @@
+User story 1A
+Jako klient banku 
+Chcę poprawnie zalogować się do serwisu bankowego
+Aby sprawdzić swoje środki na koncie
+
+User story 1B
+Jako klient banku 
+Chcę dostać informację, że nie ma możliwości zalogowania się bez poprawnego loginu i hasła
+Aby mieć pewność, że osoba nieuprawniona nie wejdzie na moje konto
+
+User story 2A
+Jako klient banku
+Chcę wykonać natychiastowy przelew środków na konto w tym samym banku
+Aby sprawdzić czy środki zostaną przelane bez prowizji
+
+User story 2B
+Jako klient banku
+Chcę wykonać przelew zagraniczny 
+Aby sprawdzić jaka kwota prowizji zostanie naliczona
+
+User story 3A
+Jako nowy użytkownik aplikacji
+Chcę sprawdzić czy jestem zalogowany
+Aby skorzystać z serwisu
+
+User story 3B
+Jako nowy użytkownik aplikacji
+Chcę, aby aplikacja wylogowywała mnnie automatycznie po określonym czasie bez działań
+Aby mieć pewność co do bezpieczeństwa moich środkó
