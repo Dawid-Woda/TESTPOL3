@@ -1,0 +1,1 @@
+Przyk³adowy tekst
