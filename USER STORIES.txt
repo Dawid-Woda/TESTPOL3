@@ -8,6 +8,13 @@ Jako klient banku
 Chcę dostać informację, że nie ma możliwości zalogowania się bez poprawnego loginu i hasła
 Aby mieć pewność, że osoba nieuprawniona nie wejdzie na moje konto
 
+Rozwinięcie User story 1B
+Nazwa: Bezpieczeństwo logowania
+Użytkownik: Klient banku
+Cel: brak możliwości zalogowania się na konto użytkownika bez podania poprawnego loginu i hasła
+Główny scenariusz:
+1. Klient 
+
 User story 2A
 Jako klient banku
 Chcę wykonać natychiastowy przelew środków na konto w tym samym banku
