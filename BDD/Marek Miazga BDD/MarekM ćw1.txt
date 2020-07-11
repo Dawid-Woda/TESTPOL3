@@ -1,0 +1,32 @@
+Scenariusz 1: Logowanie do banku
+
+1a
+Jako użytkownik
+Chcę zalogować się do banku za pomocą poprawnego loginu i hasła
+aby mieć możliwość zarządzania swoim kontem
+1b
+Jako użytkownik 
+Chcę zalogować się do banku poprawnym loginem i błędnym hasłem
+Aby sprawdzić czy system odrzuci logowanie
+
+Scenariusz 2: Przesyłanie środków na koncie
+2a
+Jako zalogowany użytkownik 
+Chcę wykonać przelew bankowy
+Aby opłacić rachunek
+
+2b
+Jako zalogowany użytkownik 
+Chcę wykonać przelew bankowy na kwotę 5000 zł
+Aby sprawdzić czy działa limit jednorazowego przelewu 4500 zł
+
+Scenariusz 3: Sprawdzanie statusu użytkownika
+3a
+Jako zalogowany użytkownik
+Chcę sprawdzić swój status po zamknięciu przeglądarki 
+W celu sprawdzenia czy zostałem wylogowany
+
+3b
+Jako zalogowany użytkownik
+Chcę sprawdzić swój status po 10 minutach nieaktywności
+W celu sprawdzenia czy zostałem wylogowany

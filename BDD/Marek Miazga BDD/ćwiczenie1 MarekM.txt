@@ -1,0 +1,6 @@
+Scenariusz 1: Logowanie do banku
+
+1a
+Jako użytkownik
+Chcę zalogować się do banku za pomocą poprawnego loginu i hasła
+aby mieć możliwość zarządzania swoim kontem 
