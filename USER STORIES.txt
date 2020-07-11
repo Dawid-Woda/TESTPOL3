@@ -11,9 +11,24 @@ Aby mieć pewność, że osoba nieuprawniona nie wejdzie na moje konto
 Rozwinięcie User story 1B
 Nazwa: Bezpieczeństwo logowania
 Użytkownik: Klient banku
-Cel: brak możliwości zalogowania się na konto użytkownika bez podania poprawnego loginu i hasła
+Cel: Możliwość logowania tylko po podaniu poprawnego loginu i hasła
 Główny scenariusz:
-1. Klient 
+1. Klient chce zalogować się do serwisu
+2. Klient otwiera pole logowania
+
+Poprawny login
+Ad1.
+I. Klient wpisuje odpowiedni login i hasło
+II. Klient jest zalogowany do serwisu
+Ad2. Klient wpisuje błędne hasło
+I. Serwis wyświetla informację o błędnym haśle
+II. Klient nie może zalogować się do serwisu
+Ad3. Klient wpisuje błędny login
+I. Serwis wyświetla informację o błędnym loginie
+II. Klient nie może zalogować się do serwisu
+
+
+
 
 User story 2A
 Jako klient banku
@@ -34,3 +49,18 @@ User story 3B
 Jako nowy użytkownik aplikacji
 Chcę, aby aplikacja wylogowywała mnnie automatycznie po określonym czasie bez działań
 Aby mieć pewność co do bezpieczeństwa moich środkó
+
+
+Feature:
+Przelew na konto wewnętrzne
+Background:
+Given
+Klient zalogowany
+Scenario: Poprawne wykonanie przelewu wewnętrznego
+Given Klient zalogowany
+When Wybieram pole wykonywania przelewów
+And Wybieram przelew wewnętrzny
+And wpisuje odpowiednie dane do przelewu
+And zatwierdzam przelew
+Then wyświetlony jest komunikat o wykonaniu przelewu
+And przelew zostaje wykonany
