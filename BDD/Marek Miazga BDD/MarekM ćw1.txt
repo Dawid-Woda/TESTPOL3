@@ -30,3 +30,19 @@ W celu sprawdzenia czy zostałem wylogowany
 Jako zalogowany użytkownik
 Chcę sprawdzić swój status po 10 minutach nieaktywności
 W celu sprawdzenia czy zostałem wylogowany
+
+
+=============================================
+
+Nazwa: Przesyłanie środków na koncie
+Inicjator: zalogowany klient banku
+Cel: opłacenie rachunku
+Główny scenariusz:
+1.	Użytkownik chce dokonać przelewu 
+2.	Użytkownik w sekcji nowy przelew podaje dane odbiorcy oraz kwotę przelewu
+3.	Zatwierdza przelew
+4.	Autoryzuje transakcję 
+5.	System dokonuje przelewu
+2a. Brak wystarczających środków na koncie
+a.	System informuje o braku dostępnych środków
+b.	Niepowodzenie przelewiu 
