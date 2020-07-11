@@ -46,3 +46,26 @@ Główny scenariusz:
 2a. Brak wystarczających środków na koncie
 a.	System informuje o braku dostępnych środków
 b.	Niepowodzenie przelewiu 
+
+
+==================================
+
+Feature: Wykonanie przelewu
+Background:
+	Given Jestem zalogowany
+Scenario: Przelew
+	Given Jestem na stronie banku
+	When Przechodzę do sekcji przelewy
+		And klikam w nowy przelew
+		And wpisuje dane do przelewu
+		And zatwierdzam przelew
+	Then wyświetlony jest  komunikat o wykonaniu przelewu 
+		And przelew zostaje wykonany
+Scenerio: zbyt wysoki przelew
+	Given Jestem na stronie banku
+	When Przechodzę do sekcji przelewy
+		And klikam w nowy przelew
+		And wpisuje dane do przelewu i kwotę 5000 zł
+		And zatwierdzam przelew
+	Then wyświetlony jest  komunikat o przekroczeniu limitu jednorazowego przelewu 
+		And przelew nie zostaje wykonany
