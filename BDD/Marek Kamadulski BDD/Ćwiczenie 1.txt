@@ -34,5 +34,5 @@ Aby sprawdzić poprawność systemu odzyskiwania hasła
 
 1b. 
 Jako klient
-Chcę mieć możliwość nadania nowego hasła do serwisu bankowego po nieudanym logowaniu
+Chcę mieć możliwość nadania nowego hasła do serwisu bankowego po nieudanym logowaniu (błędne dane logowania)
 Aby sprawdzić jaki mam aktualny status użytkownika
