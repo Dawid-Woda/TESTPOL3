@@ -1,0 +1,37 @@
+Scenariusz 1: Logowanie do banku
+
+1A
+Jako użytkownik
+Chcę zalogować się do banku za pomocą prawidłowego loginu i hasła 
+Aby sprawdzić stan swojego konta
+
+1B
+Jako użytkownik 
+Chcę zalogować się do banku za pomocą prawidłowego loginu i błędnego hasła 
+Aby sprawdzić, czy moje konto jest zabezpieczone
+
+
+Scenariusz 2: Przesyłanie środków na koncie
+
+2A
+Jako zalogowany użytkownik 
+Chcę przelać pieniądze do innego użytkownika 
+Aby sprawdzić, czy zostaną one przesłane na podane konto 
+
+2B
+Jako zalogowany użytkownik
+Chcę przelać pieniądze do innego użytkownika 
+Aby sprawdzić, czy mogę to zrobić, kiedy na koncie nie mam wystarczających środków 
+
+
+Scenariusz 3: Sprawdzanie statusu użytkownika
+
+3A
+Jako użytkownik 
+Chcę się zalogować na swoje konto przy użyciu prawidłowego loginu i hasła
+Aby sprawdzić, czy status użytkownika zmieni się na aktywny 
+
+3B
+Jako zalogowany użytkownik 
+Chcę dezaktywować konto
+Aby sprawdzić, czy status użytkownika zmieni się z aktywnego na nieaktywny
