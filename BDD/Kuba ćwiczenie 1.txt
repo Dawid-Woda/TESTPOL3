@@ -1,0 +1,26 @@
+Scenariusz 1a: Logowanie do banku
+Jako klient banku PKO SA
+Chcę zalogować się do konta używając mojego loginu i hasła
+Aby sprawdzić stan konta bankowego
+
+1b
+Jako klient banku PKO SA
+Chcę zalogować się do konta używając mojego loginu i hasła
+Aby sprawdzić spłacić zadłużenie karty kredytowej
+
+
+Scenariusz 2: Przesyłanie środków na koncie
+Jako klient banku PKO SA
+Chcę zalogować się do konta używając mojego loginu i hasła
+Aby dokonać przelewu za rachunek
+
+
+Scenariusz 3a: Sprawdzanie statusu użytkownika
+Jako klient sklepu internetowego
+Chcę sprawdzić stan zamówienia
+Aby uzyskać informacje na temat tego zamówienia
+
+3b:
+Jako uzytkownik forum internetowego
+Chcę sprawdzić status mojego konta
+Aby móc napisać nowy temat

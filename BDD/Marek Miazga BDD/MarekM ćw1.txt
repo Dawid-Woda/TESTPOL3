@@ -1,0 +1,71 @@
+Scenariusz 1: Logowanie do banku
+
+1a
+Jako użytkownik
+Chcę zalogować się do banku za pomocą poprawnego loginu i hasła
+aby mieć możliwość zarządzania swoim kontem
+1b
+Jako użytkownik 
+Chcę zalogować się do banku poprawnym loginem i błędnym hasłem
+Aby sprawdzić czy system odrzuci logowanie
+
+Scenariusz 2: Przesyłanie środków na koncie
+2a
+Jako zalogowany użytkownik 
+Chcę wykonać przelew bankowy
+Aby opłacić rachunek
+
+2b
+Jako zalogowany użytkownik 
+Chcę wykonać przelew bankowy na kwotę 5000 zł
+Aby sprawdzić czy działa limit jednorazowego przelewu 4500 zł
+
+Scenariusz 3: Sprawdzanie statusu użytkownika
+3a
+Jako zalogowany użytkownik
+Chcę sprawdzić swój status po zamknięciu przeglądarki 
+W celu sprawdzenia czy zostałem wylogowany
+
+3b
+Jako zalogowany użytkownik
+Chcę sprawdzić swój status po 10 minutach nieaktywności
+W celu sprawdzenia czy zostałem wylogowany
+
+
+=============================================
+
+Nazwa: Przesyłanie środków na koncie
+Inicjator: zalogowany klient banku
+Cel: opłacenie rachunku
+Główny scenariusz:
+1.	Użytkownik chce dokonać przelewu 
+2.	Użytkownik w sekcji nowy przelew podaje dane odbiorcy oraz kwotę przelewu
+3.	Zatwierdza przelew
+4.	Autoryzuje transakcję 
+5.	System dokonuje przelewu
+2a. Brak wystarczających środków na koncie
+a.	System informuje o braku dostępnych środków
+b.	Niepowodzenie przelewiu 
+
+
+==================================
+
+Feature: Wykonanie przelewu
+Background:
+	Given Jestem zalogowany
+Scenario: Przelew
+	Given Jestem na stronie banku
+	When Przechodzę do sekcji przelewy
+		And klikam w nowy przelew
+		And wpisuje dane do przelewu
+		And zatwierdzam przelew
+	Then wyświetlony jest  komunikat o wykonaniu przelewu 
+		And przelew zostaje wykonany
+Scenerio: zbyt wysoki przelew
+	Given Jestem na stronie banku
+	When Przechodzę do sekcji przelewy
+		And klikam w nowy przelew
+		And wpisuje dane do przelewu i kwotę 5000 zł
+		And zatwierdzam przelew
+	Then wyświetlony jest  komunikat o przekroczeniu limitu jednorazowego przelewu 
+		And przelew nie zostaje wykonany

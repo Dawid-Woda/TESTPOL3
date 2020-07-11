@@ -1,0 +1,30 @@
+
+2.
+Jako użytkownik
+chcę załogować si do banku za pomocą niepoprawnego loginu lub hasła
+Aby sprawdziś czy  system logowania odrzuci niepoprawne dane
+
+
+Sc 2:Przesyłanie środków na koncie
+1.
+Jako użytkownik
+chcę po załogowaniu się do banku za przesłać środki na inne konto,mając wystarczająco środków
+Aby sprawdziś czy środki się przesyłają i rozliczenie jest poprawne
+
+2
+Jako użytkownik
+chcę po załogowaniu się do banku za przesłać środki na inne konto, nie mając wystarczająco środków
+Aby sprawdzić czy system odrzuci tą sprobę
+
+
+Sc 3:Sprawdzanie statusu użytkownika
+1.
+Jako użytkownik
+chcę Sprawdzić status użytkownika, po załogowaniu
+Aby sprawdzić czy mam status: Użytkownik załogowany
+
+c 3:Sprawdzanie statusu użytkownika
+1.
+Jako użytkownik
+chcę Sprawdzić status użytkownika, nie łogując 
+Aby sprawdzić czy mam status: Użytkownik niezałogowany
