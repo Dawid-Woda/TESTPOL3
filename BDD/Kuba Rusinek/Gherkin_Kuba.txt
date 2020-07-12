@@ -11,7 +11,7 @@ Given Jestem zalogowany do konta bankowego, stan konta 500PLN
 And Klikam nowy przelew
 And Uzupełniam dane do przelewu, kwota 750PLN
 When Klikam wykonaj przelew
-Then Wpsiuje ostatni kod SMS
+Then Wpsiuje kod SMS
 But Przelew nie może zostać wykonany, za mało środków na koncie
 ///////
 Feature: Logowanie do konta bankowego
