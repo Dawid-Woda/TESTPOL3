@@ -1,4 +1,4 @@
-Example: Wykonanie przelewu
+Scenario: Wykonanie przelewu
 Given Jestem zalogowany do konta bankowego
 And Klikam nowy przelew
 And Uzupełniam dane do przelewu
@@ -6,7 +6,7 @@ When Klikam wykonaj przelew
 Then Wpsiuje ostatni kod z karty kodów
 But Przelew nie może zostać wykonany, autoryzuj nową kartę kodów
 ///////
-Example: Wykonanie przelewu
+Scenario: Wykonanie przelewu
 Given Jestem zalogowany do konta bankowego, stan konta 500PLN
 And Klikam nowy przelew
 And Uzupełniam dane do przelewu, kwota 750PLN
