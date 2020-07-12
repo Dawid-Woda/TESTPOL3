@@ -1,0 +1,31 @@
+Example: Wykonanie przelewu
+Given Jestem zalogowany do konta bankowego
+And Klikam nowy przelew
+And Uzupełniam dane do przelewu
+When Klikam wykonaj przelew
+Then Wpsiuje ostatni kod z karty kodów
+But Przelew nie może zostać wykonany, autoryzuj nową kartę kodów
+///////
+Example: Wykonanie przelewu
+Given Jestem zalogowany do konta bankowego, stan konta 500PLN
+And Klikam nowy przelew
+And Uzupełniam dane do przelewu, kwota 750PLN
+When Klikam wykonaj przelew
+Then Wpsiuje ostatni kod SMS
+But Przelew nie może zostać wykonany, za mało środków na koncie
+///////
+Feature: Logowanie do konta bankowego
+Background:
+Given Klient posiadający konto bankowe
+And Konto bankowe jest aktywne
+Scenario: Poprawne logowanie
+Given Klient jest na stronie logowania do banku
+When Klient wpisuje pole "login" z <login>
+And Klient wpisuje pole "hasło" z <hasło>
+And Klient klika w przycisk "Zaloguj"
+Then Klient został zalogowany do konta bankowego
+
+|login      |hasło|
+|123456     |^&hhmrtp57|
+|123466     |l6X%6@m43G|
+///////
