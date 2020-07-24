@@ -1,0 +1,300 @@
+{
+  "id": "e4287cfb-49ef-408a-b67c-def071f54134",
+  "version": "2.0",
+  "name": "extra",
+  "url": "https://www.seleniumeasy.com/test/",
+  "tests": [{
+    "id": "c52009d1-e274-4f01-9c78-faa34d534faa",
+    "name": "extra",
+    "commands": [{
+      "id": "e214f440-9b47-4674-9ca7-3b0c1e7cf840",
+      "comment": "",
+      "command": "open",
+      "target": "/test/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62bb6485-03a1-4a52-b3ce-49641af084dc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d29d2c9-34f2-4546-916f-36bd2acbb1da",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul:nth-child(3) > .tree-branch:nth-child(1) > a",
+      "targets": [
+        ["css=ul:nth-child(3) > .tree-branch:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Input Forms')])[2]", "xpath:link"],
+        ["xpath=//ul[@id='treemenu']/li/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[11]", "xpath:href"],
+        ["xpath=//div/div/div[2]/ul/li/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "609c8c44-6d83-46a9-993a-b5d673678f9c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Simple Form Demo",
+      "targets": [
+        ["linkText=Simple Form Demo", "linkText"],
+        ["css=.tree-branch:nth-child(1) > ul > li:nth-child(1) > a:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Simple Form Demo')])[2]", "xpath:link"],
+        ["xpath=//ul[@id='treemenu']/li/ul/li/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, './basic-first-form-demo.html')])[2]", "xpath:href"],
+        ["xpath=//li/ul/li/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29fe4bda-4d6f-4770-bacf-03b94ac88940",
+      "comment": "",
+      "command": "if",
+      "target": "$",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76a1b801-9ae1-446b-ac62-b5a3ce32c462",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//*[@id=\"easycont\"]/div/div[2]/h3",
+      "targets": [],
+      "value": "This would be your first example to start with Selenium"
+    }, {
+      "id": "93c9317e-9d82-4fd8-92be-67d24e578ae2",
+      "comment": "",
+      "command": "if",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13427a37-673b-480d-ae3d-1d7b543a8a53",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "//*[@id=\"treemenu\"]/li/ul/li[3]/a",
+      "targets": [],
+      "value": "Table"
+    }, {
+      "id": "03e08b19-2f38-47ac-b9db-9e90e15d73ef",
+      "comment": "",
+      "command": "click",
+      "target": "//*[@id=\"treemenu\"]/li/ul/li[3]/ul/li[3]/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f865d99-e03a-4b96-88e6-a74b97b5239c",
+      "comment": "",
+      "command": "if",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc89cb7c-a767-4dd4-91b8-f8f4202f2104",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//*[@id=\"treemenu\"]/li/ul/li[3]/ul/li[3]/a",
+      "targets": [],
+      "value": "Table Filter"
+    }, {
+      "id": "289bb957-0e74-4928-bc19-d1dd0d1ec201",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Red')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "735fbd4e-86d8-47e2-bb8e-009ad70ad8a2",
+    "name": "TC #2",
+    "commands": [{
+      "id": "6234fb81-8cf6-4e44-91cd-00af726941c0",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.seleniumeasy.com/test/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cded2822-4239-433a-a163-8d2ec261350d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18a00498-2db8-474a-a97a-5f7923875494",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Input Forms",
+      "targets": [
+        ["linkText=Input Forms", "linkText"],
+        ["css=.nav:nth-child(1) > .dropdown:nth-child(1) > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Input Forms')]", "xpath:link"],
+        ["xpath=//div[@id='navbar-brand-centered']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "663f0ab0-cd3e-41d8-a404-4bad8ef96ae1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Simple Form Demo",
+      "targets": [
+        ["linkText=Simple Form Demo", "linkText"],
+        ["css=.open li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Simple Form Demo')]", "xpath:link"],
+        ["xpath=//div[@id='navbar-brand-centered']/ul/li/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './basic-first-form-demo.html')]", "xpath:href"],
+        ["xpath=//li/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Simple Form Demo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c0ea1a0-f1b6-4560-a312-181d137156b8",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//*[@id=\"easycont\"]/div/div[2]/h3",
+      "targets": [],
+      "value": "text_na_stronie"
+    }, {
+      "id": "d746eddb-9a4e-4758-b3a6-916d72ccabbd",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//*[@id=\"easycont\"]/div/div[2]/h3",
+      "targets": [],
+      "value": "text_na_stronie"
+    }, {
+      "id": "dec56bfc-6d84-43fe-95e4-24d998a43173",
+      "comment": "",
+      "command": "if",
+      "target": "${text_na_stronie} > 0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63b96f81-9f30-4b6b-8773-c56a1287cd5d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tree-branch:nth-child(3) > a",
+      "targets": [
+        ["css=.tree-branch:nth-child(3) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Table')])[7]", "xpath:link"],
+        ["xpath=//ul[@id='treemenu']/li/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[11]", "xpath:href"],
+        ["xpath=//div/div/div[2]/ul/li/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1172352-7948-4643-98e7-e62fd9419ccf",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61f6687b-74c2-4433-9265-2065b840febb",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//*[@id=\"treemenu\"]/li/ul/li[3]/a",
+      "targets": [],
+      "value": "Table"
+    }, {
+      "id": "1f6fa6e6-c993-494e-9998-5c9d6c14c9f3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//*[@id=\"treemenu\"]/li/ul/li[3]/a",
+      "targets": [],
+      "value": "Table"
+    }, {
+      "id": "f3518f6a-5a84-4d50-8b2e-ae616f466b94",
+      "comment": "",
+      "command": "if",
+      "target": "${Table} > 0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4c3231c-0019-4d2e-b512-8039cecd8da3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Table Filter",
+      "targets": [
+        ["linkText=Table Filter", "linkText"],
+        ["css=.tree-branch:nth-child(3) li:nth-child(3) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Table Filter')])[2]", "xpath:link"],
+        ["xpath=//ul[@id='treemenu']/li/ul/li[3]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, './table-records-filter-demo.html')])[2]", "xpath:href"],
+        ["xpath=//li/ul/li[3]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ac74d0a-6564-4a64-907f-f533562a2439",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "154c74a7-710e-492e-89de-2cd4fbeece4e",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//*[@id=\"treemenu\"]/li/ul/li[3]/ul/li[3]/a",
+      "targets": [],
+      "value": "Table Filter"
+    }, {
+      "id": "822c5814-4933-4605-b9a8-aa0c2de91c51",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//*[@id=\"treemenu\"]/li/ul/li[3]/ul/li[3]/a",
+      "targets": [],
+      "value": "Table Filter"
+    }, {
+      "id": "c66db37b-0dbd-4cfe-934d-8f717c69de47",
+      "comment": "",
+      "command": "if",
+      "target": "${Table Filter} > 0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d37b0bd-9bb1-44c4-a58e-83487208301d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Red')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "77e2a21d-a5ec-4c39-981b-1c0cadebe9bc",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19c3e3c7-6ce4-4182-a58c-566006f67cd0",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=/html/body/div[2]/div/div[2]/section/div/div/div[2]/div[2]/table/tbody/tr[3]/td[3]/div/a/i",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e94ea614-4d45-47bc-9a90-912a89827294",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c52009d1-e274-4f01-9c78-faa34d534faa"]
+  }],
+  "urls": ["https://www.seleniumeasy.com/", "https://www.seleniumeasy.com/test/"],
+  "plugins": []
+}
